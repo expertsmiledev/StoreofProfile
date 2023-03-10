@@ -16,7 +16,7 @@ const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   const { addToast: notify } = useToasts();
-
+  //user login
   useEffect(() => {
     const loggedUser = storageService.loadUser();
 
