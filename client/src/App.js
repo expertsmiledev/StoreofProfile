@@ -16,7 +16,7 @@ const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   const { addToast: notify } = useToasts();
-  //user login
+  //user login 
   useEffect(() => {
     const loggedUser = storageService.loadUser();
 
@@ -46,7 +46,8 @@ const App = () => {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user]);
-
+  
+  //hook using
   useEffect(() => {
     const darkMode = storageService.loadDarkMode();
     if (darkMode === 'true') {
